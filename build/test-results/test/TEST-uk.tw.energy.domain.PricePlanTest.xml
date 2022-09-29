@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="uk.tw.energy.domain.PricePlanTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-09-29T16:00:39" hostname="tyler" time="0.032">
+  <properties/>
+  <testcase name="shouldReceiveMultipleExceptionalDateTimes()" classname="uk.tw.energy.domain.PricePlanTest" time="0.011"/>
+  <testcase name="shouldReturnAnExceptionPriceGivenExceptionalDateTime()" classname="uk.tw.energy.domain.PricePlanTest" time="0.001"/>
+  <testcase name="shouldReturnTheBasePriceGivenAnOrdinaryDateTime()" classname="uk.tw.energy.domain.PricePlanTest" time="0.001"/>
+  <testcase name="shouldReturnTheEnergySupplierGivenInTheConstructor()" classname="uk.tw.energy.domain.PricePlanTest" time="0.016"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "b029887e-718f-4a67-8601-353fa0ec56ad",
+		"name": "Thoughtworks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"smartMeterId\": \"smart-meter-0\",\n    \"electricityReadings\": [\n        {\n            \"time\": \"2022-09-29T08:00:00Z\",\n            \"reading\": 0.0503\n        },\n        {\n            \"time\": \"2022-09-28T08:01:00Z\",\n            \"reading\": 0.0621\n        },\n        {\n            \"time\": \"2022-09-27T08:02:00Z\",\n            \"reading\": 0.0222\n        },\n        {\n            \"time\": \"2022-09-10T08:03:00Z\",\n            \"reading\": 0.0423\n        },\n        {\n            \"time\": \"2022-09-11T08:04:00Z\",\n            \"reading\": 0.0191\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/readings/store/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"readings",
+						"store",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/readings/read/smart-meter-0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"readings",
+						"read",
+						"smart-meter-0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Plans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/price-plans/compare-all/smart-meter-0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"price-plans",
+						"compare-all",
+						"smart-meter-0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recommended",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/price-plans/recommend/smart-meter-0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"price-plans",
+						"recommend",
+						"smart-meter-0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadCost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/readings/getCost/smart-meter-0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"readings",
+						"getCost",
+						"smart-meter-0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

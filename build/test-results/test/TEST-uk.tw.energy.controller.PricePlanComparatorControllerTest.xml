@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="uk.tw.energy.controller.PricePlanComparatorControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-09-29T16:00:38" hostname="tyler" time="0.863">
+  <properties/>
+  <testcase name="shouldRecommendLimitedCheapestPricePlansForMeterUsage()" classname="uk.tw.energy.controller.PricePlanComparatorControllerTest" time="0.822"/>
+  <testcase name="shouldRecommendCheapestPricePlansMoreThanLimitAvailableForMeterUsage()" classname="uk.tw.energy.controller.PricePlanComparatorControllerTest" time="0.002"/>
+  <testcase name="givenNoMatchingMeterIdShouldReturnNotFound()" classname="uk.tw.energy.controller.PricePlanComparatorControllerTest" time="0.021"/>
+  <testcase name="shouldCalculateCostForMeterReadingsForEveryPricePlan()" classname="uk.tw.energy.controller.PricePlanComparatorControllerTest" time="0.007"/>
+  <testcase name="shouldRecommendCheapestPricePlansNoLimitForMeterUsage()" classname="uk.tw.energy.controller.PricePlanComparatorControllerTest" time="0.002"/>
+  <system-out><![CDATA[11:00:38.751 [Test worker] DEBUG reactor.util.Loggers - Using Slf4j logging framework
+------expected------->
+{pricePlanComparisons={best-supplier=10.0, test-supplier=100.0, second-best-supplier=20.0}, pricePlanId=test-supplier}
+-------body------>
+{pricePlanComparisons={best-supplier=10.0, test-supplier=100.0, second-best-supplier=20.0}, pricePlanId=test-supplier}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
